@@ -1,0 +1,206 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .three{
+    border: 1px solid #202020;
+    margin-left: 90px;
+    margin-top: 40px;
+    width: 600px;
+    height: 430px;
+    padding-top: 20px;
+    box-shadow: 0px -4px 4px rgba(50, 50, 50,50);
+    font-size: 20px;
+    color:black;
+    background-image: url("https://thumbs.dreamstime.com/z/contact-us-yellow-notepaper-closeup-words-written-white-background-business-concept-35277775.jpg");
+  }
+  
+  .button{
+    font-family: arial, sans-serif;
+    background-color: maroon;
+          border: none;
+          color: #fff;
+          padding: 10px 15px;
+          text-decoration: none;
+          margin: 2px 2px;
+          cursor: pointer;
+  
+   }
+ 
+  
+    
+    
+   }
+   .back{
+    background-image: url("https://th.bing.com/th/id/R.5f40a1d7e8e31ca343ffada5e2151582?rik=nF954yOu7fSvUA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fke5GFrZ.jpg&ehk=d4y2zX4brfZm6t4e8zMQ6NkA1IPyLpIfbQE1FhG9vFM%3d&risl=&pid=ImgRaw&r=0");
+    height: 100%;
+   }
+  
+   #c{
+    color: burlywood;
+   }
+   #log{
+	background-image: url("https://th.bing.com/th/id/R3e4fe0a9dac2125cf3b523fd726b5fd0?rik=hwDg0zPOAfHxOA&riu=http%3a%2f%2fwww.wallpapersin4k.org%2fwp-content%2fuploads%2f2017%2f04%2fWeb-Page-Wallpaper-10.jpg&ehk=TYXyKA5wl2g%2br2rs%2fxuMfNVrGUgkumXN7X0i3glkAuA%3d&risl=&pid=ImgRaw");
+
+margin-bottom: 500px;
+margin-right: 300px;
+margin-top: 250px;
+margin-left: 100px;
+font-size: 20px;
+color: antiquewhite;
+}
+
+#llog{
+	background-image:url("https://static.vecteezy.com/system/resources/previews/000/230/997/original/vector-abstract-low-poly-design-background.jpg") ;
+	
+	font-size: 20px;
+}
+
+.nav{
+	margin-top: -2%;
+	margin-left: 10%;
+  
+  color:silver;
+  padding-bottom: 10px;
+  padding-top:1%;
+  text-align:justify;
+
+}
+.nav:hover{
+  color: paleturquoise;
+  background-color: greenyellow;
+
+}
+#y{
+	color:#E6EEFF;
+  font-weight: bold;
+  font-family:Brush Script MT;
+  font-size: 20px;
+  margin-right: 2%;
+
+}
+#l{
+	background-image: url("https://th.bing.com/th/id/R.d0fc7b038ce797b199d2bc4c1648f5ec?rik=NrW%2fxwMC%2fe05PA&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f01%2f242279-water_drops-abstract-cyan-blue_background-simple-artwork-digital_art-simple_background.jpg&ehk=N4KWfDRbKwengDV0E%2bedPCFbIHpnb88Tah7%2biCdLLHY%3d&risl=&pid=ImgRaw&r=0");
+}
+.d{
+  font-size: 17px;
+   } 
+
+.bg{
+     background-color:rgba(144, 238, 144, 0.226);
+}
+
+.last{
+  margin-left: 83%;
+  margin-top: 2%;
+  
+} 
+.l{
+    height:80px;
+    width:1111px;
+    font-size: 40px;
+    background-color:lightcyan;  
+}
+#b{
+  background-color:lightcyan;
+  padding-bottom: 15px;
+  font-size: 25px;
+  color:darkgreen;
+}
+.free{
+    background-color: black;
+    height: 300px;
+    color:aquamarine;
+  
+   }
+   .dd{
+    margin-left: 50%;
+    font-size: 18px;
+    word-spacing: 7px;
+    margin-top: -37%;
+    width: 33%;
+  
+   }
+   .ff{
+    margin-right: 50%;
+    font-size: 18px;
+    width: 30%;
+    word-spacing: 7px;
+    margin-bottom:-20%;
+   }
+   .row{
+    margin-left: 12%;
+    margin-top: 2%;
+   padding-top: 4%;
+   }
+   .se{
+	background-color:lightgray;
+	width: 1111px;
+	height:400px;
+    padding-top: 3%;
+	font-family: times, sans-serif;
+	}
+.threee{
+  border: 1px solid #202020;
+  margin-left: 47px;
+  margin-top: 40px;
+  width: 273px;
+  height: 270px;
+  padding-top: 20px;
+  box-shadow: 0px -4px 4px rgba(50, 50, 50,50);
+  font-size: 14px;
+}
+.threee:hover{
+	background-color:#1A6093;
+	color: white;
+}
+.fr{
+	border: 1px solid #202020;
+  margin-left: 400px;
+  margin-bottom: 500px;
+  margin-top: -240px;
+  width: 273px;
+  height: 268px;
+  padding-top: 23px;
+  box-shadow: 0px -4px 4px rgba(50, 50, 50,50);
+
+}
+.fr:hover{
+	background-color: #1A6093;
+	color: white;
+}
+.fiv{
+  border: 1px solid #202020;
+  margin-left: 780px;
+  margin-top: -740px;
+  width:273px;
+  height: 260px;
+  padding-top: 20px;
+  box-shadow: 0px -4px 4px rgba(50, 50, 50,50);
+  font-size: 14px;
+}
+.fiv:hover{
+	background-color: #1A6093;
+	color: white;
+}
+.line{
+	background-color: black;
+	color: white;
+	width: 1100px;
+	height: 47px;
+	margin-left: 5%;
+	margin-right: 8px;
+}
+.iu{
+    background-image:url(https://austingranitedirect.com/wp-content/uploads/2020/02/5133-Symphony-Grey.jpg)

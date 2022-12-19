@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  equipment_id: MyString
+  equipment_name: MyString
+  location: MyString
+  in_charge: MyString
+  no_available: 1
+  no_in_use: 1
+
+two:
+  equipment_id: MyString
+  equipment_name: MyString
+  location: MyString
+  in_charge: MyString
+  no_available: 1
+  no_in_use: 1

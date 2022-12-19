@@ -1,0 +1,42 @@
+<!-- p style="color: green"><%= notice %></p -->
+
+<h2>EQUIPMENT</h2>
+
+<table class="table table-striped table-bordered table-hover">
+  <thead class='thead-dark'>
+    <tr>
+      <th >Equipment ID</th>
+      <th >Equipment Name</th>
+      <th >Location</th>
+      <th >In Charge</th>
+      <th>No. Available</th>
+      <th >No. In Use</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @equipment.each do |equipment| %>
+    <tr>
+      <td><%= equipment.equipment_id %></td>
+      <td><%= equipment.equipment_name %></td>
+      <td><%= equipment.location %></td>
+      <td><%= equipment.in_charge %></td>
+      <td><%= equipment.no_available %></td>
+      <td><%= equipment.no_in_use %></td>
+      <td><%= link_to 'Show', equipment, class:"btn btn-secondary"%></td>
+    <% if user_signed_in? %>
+      <td><%= link_to 'Request', new_request_equipmet_path(:name => current_user.email, :eqname => equipment.equipment_name, :fcharge => equipment.in_charge, :eid => equipment.equipment_id ), class:"btn btn-secondary"%></td>
+    <% end %>
+    </tr>
+    <% end %>
+  </tbody>
+
+</table>
+
+<% if user_signed_in? and (current_user.admin or current_user.funded) %>
+  <%= link_to "New equipment", new_equipment_path, class:"btn btn-primary" %>
+<% end %>
+
+

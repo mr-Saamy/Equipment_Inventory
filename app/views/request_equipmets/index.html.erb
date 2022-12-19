@@ -1,0 +1,44 @@
+<p><%= notice %></p>
+
+<h2 style=" color:navy blue">REQUEST FOR EQUIPMENT</h2>
+
+<% if false %>
+<!-- div id="request_equipmets">
+  <% @request_equipmets.each do |request_equipmet| %>
+    <%= render request_equipmet %>
+    <p>
+      <%= link_to "Show this request equipmet", request_equipmet %>
+    </p>
+  <% end %>
+</div -->
+<% end %>
+
+
+<table class="table table-striped table-bordered table-hover">
+  <thead class='thead-dark'>
+    <tr>
+      <th >Username</th>
+      <th >Equipment ID</th>
+      <th >Equipment Required</th>
+      <th >No. of Units Needed</th>
+      <th >Faculty In Charge</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @request_equipmets.each do |request_equipmet| %>
+    <tr>
+      <td><%= request_equipmet.username %></td>
+      <td><%= request_equipmet.equipment_id %></td>
+      <td><%= request_equipmet.equipment %></td>
+      <td><%= request_equipmet.no_of_units %></td>
+      <td><%= request_equipmet.faculty_in_charge %></td>
+      <td><%= link_to 'Show', request_equipmet, class:"btn btn-secondary"%></td>
+
+    </tr>
+    <% end %>
+  </tbody>
+
+</table>
+
+

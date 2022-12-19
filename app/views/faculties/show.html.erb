@@ -1,0 +1,16 @@
+
+
+<%= render @faculty %>
+
+<div>
+<% if user_signed_in? and current_user.admin %>
+  <%= link_to "Edit Faculty Details", edit_faculty_path(@faculty), class:"btn btn-primary" %>
+<% end %>
+  <%= link_to "Back to Faculties", faculties_path, class:"btn btn-secondary" %>
+</div>
+<br/>
+<div>
+<% if user_signed_in? and current_user.admin %>
+  <%= button_to "Remove Faculty", @faculty, method: :delete, class:"btn btn-danger" %>
+<% end %>
+</div>

@@ -1,0 +1,42 @@
+<div id="<%= dom_id request_equipmet %>">
+  <% if false %>
+    <!-- p>
+      <strong>Username:</strong>
+      <%= request_equipmet.username %>
+    </p>
+
+    <p>
+      <strong>Equipment:</strong>
+      <%= request_equipmet.equipment %>
+    </p>
+
+    <p>
+      <strong>No of units:</strong>
+      <%= request_equipmet.no_of_units %>
+    </p>
+
+    <p>
+      <strong>Faculty in charge:</strong>
+      <%= request_equipmet.faculty_in_charge %>
+    </p -->
+  <% end %>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+
+    <h1 class="display-4"><%= request_equipmet.equipment %></h1>
+    <p class="lead"><strong>Requested By:</strong>
+    <%= request_equipmet.username %></p>
+
+    <p class="lead"><strong>No. of Units:</strong>
+    <%= request_equipmet.no_of_units %></p>
+
+    <p class="lead"><strong>Faculty in Charge:</strong>
+    <%= request_equipmet.faculty_in_charge %></p>
+
+    <hr class="my-4">
+
+  </div>
+</div>
+
+</div>

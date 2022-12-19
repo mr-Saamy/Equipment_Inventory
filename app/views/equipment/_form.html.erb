@@ -1,0 +1,47 @@
+<%= form_with(model: equipment) do |form| %>
+  <% if equipment.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(equipment.errors.count, "error") %> prohibited this equipment from being saved:</h2>
+
+      <ul>
+        <% equipment.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <!--%= form.label :equipment_id, style: "display: block" %-->
+    <%= form.text_field :equipment_id, class:"form-control", placeholder:"Equipment ID" %>
+  </div>
+
+  <div class="field form-group">
+    <!--%= form.label :equipment_name, style: "display: block" %-->
+    <%= form.text_field :equipment_name, class:"form-control", placeholder:"Equipment Name" %>
+  </div>
+
+  <div class="field form-group">
+    <!--%= form.label :location, style: "display: block" %-->
+    <%= form.text_field :location, class:"form-control", placeholder:"Location" %>
+  </div >
+
+  <div class="field form-group">
+    <!--%= form.label :in_charge, style: "display: block" %-->
+    <%= form.text_field :in_charge, class:"form-control", placeholder:"Faculty In Carge" %>
+  </div>
+
+  <div class="field form-group">
+    <!--%= form.label :no_available, style: "display: block" %-->
+    <%= form.number_field :no_available, class:"form-control", placeholder:"No. of Units Available" %>
+  </div>
+
+  <div class="field form-group">
+    <!--%= form.label :no_in_use, style: "display: block" %-->
+    <%= form.number_field :no_in_use, class:"form-control", placeholder:"No. of units occupied" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class:"btn btn-primary"%>
+  </div>
+<% end %>

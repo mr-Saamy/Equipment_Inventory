@@ -1,0 +1,20 @@
+<!-- p  id="notice" style="color: green"><%= notice %></p -->
+
+<%= render @equipment %>
+
+
+
+<div>
+
+<% if user_signed_in? and current_user.admin %>
+  <%= link_to "Edit this equipment", edit_equipment_path(@equipment), class:"btn btn-secondary" %>
+<% end %>
+  <%= link_to "Back to equipment", equipment_index_path, class:"btn btn-secondary" %>
+</div>
+<br/>
+<% if user_signed_in? and current_user.admin %>
+<div>
+
+  <%= button_to "Destroy this equipment", @equipment, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger"  %>
+</div>
+<% end %>

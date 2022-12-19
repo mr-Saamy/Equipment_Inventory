@@ -1,0 +1,85 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <li class="nav-item">
+       <img height="60px" width="60px" 
+        src="https://th.bing.com/th/id/R.7ca7b8a85829dc21fc115a725c91a865?rik=2YIqMDeJHHGgfQ&riu=http%3a%2f%2fwww.dss.nitc.ac.in%2fhostel%2fimages%2flogo.jpg&ehk=6Nu6WZJhK30D%2b8UuHVPqQ464K542XIxazAiyCaHXMtk%3d&risl=&pid=ImgRaw&r=0">
+
+      </li>
+  <%= link_to 'Equipment Inventory Management', root_path, class:"navbar-brand" %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+
+      <!--<li class="nav-item">
+        <%= link_to "Equipment List", equipment_index_path, class:"nav-link" %>
+      </li>-->
+      
+
+       <li class="nav-item">
+        <%= link_to "LANDING PAGE", home_landing_path, class:"nav-link" %>
+      </li>
+
+      <li class="nav-item">
+        <%= link_to "FACULTIES", faculties_path, class:"nav-link" %>
+      </li>
+
+      <li class="nav-item">
+        <%= link_to "PENDING REQUESTS", request_equipmets_path, class:"nav-link" %>
+      </li>
+
+      <li class="nav-item">
+        <%= link_to "VIEW", equipment_index_path, class:"nav-link" %>
+      </li>
+
+      <li class="nav-item">
+        <%= link_to "CONTACT US", home_contact_path, class:"nav-link" %>
+      </li>
+      
+
+    <% if !user_signed_in? %>
+
+      <li class="nav-item">
+        <%= link_to "SIGN UP",  new_user_registration_path, class:"nav-link" %>
+      </li>
+
+      <li class="nav-item">
+        <%= link_to "SIGN IN",  new_user_session_path, class:"nav-link" %>
+      </li>
+
+      <li class="nav-item">
+        <%= link_to "ADMIN",  new_user_session_path, class:"nav-link" %>
+      </li>
+    <% else %>
+
+      <% if current_user.admin %>
+
+        <li class="nav-item">
+          <%= link_to "Edit Admin Profile",  edit_user_registration_path, class:"nav-link" %>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to "Admin Sign Out",   destroy_user_session_path, method: :delete, class:"nav-link" %>
+        </li>
+      <% else %>
+
+        <li class="nav-item">
+          <%= link_to "Edit Profile",  edit_user_registration_path, class:"nav-link" %>
+        </li>
+
+        <li class="nav-item">
+          <%= link_to "Sign Out",   destroy_user_session_path, method: :delete, class:"nav-link" %>
+        </li>
+      <% end %>
+
+    <% end %>
+
+    </ul>
+  </div>
+</nav>
+
+

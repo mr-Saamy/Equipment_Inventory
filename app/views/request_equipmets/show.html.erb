@@ -1,0 +1,19 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @request_equipmet %>
+
+<div>
+  <% if user_signed_in? and current_user.admin %>
+    <%= link_to "Edit this request", edit_request_equipmet_path(@request_equipmet), class:"btn btn-primary" %>
+  <% end %>
+  <%= link_to "Back to request equipmets", request_equipmets_path, class:"btn btn-secondary" %>
+</div>
+<br/>
+<div>
+  <% if user_signed_in? and current_user.admin %>
+    <%= button_to "Destroy this request", @request_equipmet, method: :delete, class:"btn btn-danger" %>
+    <%= button_to "Accept this request",  request_equipmets_updatereq_path(@request_equipmet.id), class:"btn btn-info" %>
+
+
+  <% end %>
+</div>

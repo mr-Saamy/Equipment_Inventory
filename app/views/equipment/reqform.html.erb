@@ -1,0 +1,38 @@
+<h1>Hello</h1>
+<%=form_with(model: @request_equipmet) do |form| %>
+  <% if @request_equipmet.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(@request_equipmet.errors.count, "error") %> prohibited this request_equipmet from being saved:</h2>
+
+      <ul>
+        <% @request_equipmet.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= form.label :username, style: "display: block" %>
+    <%= form.text_field :username, class:"form-control", placeholder:"User ID/Email", value:@uname %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :equipment, style: "display: block" %>
+    <%= form.text_field :equipment, class:"form-control", placeholder:"Equipment Required", value:@equip %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :no_of_units, style: "display: block" %>
+    <%= form.number_field :no_of_units, class:"form-control", placeholder:"No. Of Units Needed" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :faculty_in_charge, style: "display: block" %>
+    <%= form.text_field :faculty_in_charge, class:"form-control", placeholder:"Faculty in Charge", value:@incharge %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class:"btn btn-primary" %>
+  </div>
+<% end %>

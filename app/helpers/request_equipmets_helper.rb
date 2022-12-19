@@ -1,0 +1,2 @@
+module RequestEquipmetsHelper
+end
